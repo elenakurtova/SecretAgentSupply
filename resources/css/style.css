@@ -68,10 +68,6 @@ img {
 .container {
   width: 960px;
   margin: 0 auto;
-  border: 2px dotted yellow;
-/*  text-align: center;
-  align-items: center;
-  display: flex;*/
 }
 
 .container img {
@@ -84,8 +80,6 @@ img {
   background-position: center;
   background-size: cover;
   height: 25rem;
-
-  border: 1px solid red;
 }
 
 .main-banner .headline {
@@ -129,10 +123,6 @@ li {
   display: flex;
   justify-content: space-between;
   margin: 3rem 0 0 0;
-}
-
-.container .products {
-
 }
 
 .product.pen,
@@ -192,7 +182,115 @@ footer {
   text-align: left;
 }
 
-@media only screen and (max-width: 1024px)
-body {
+/* Mrdia Queries */
+@media only screen and (max-width: 1024px) {
+  body {
     font-size: 16px;
   }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  .products {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .product.pen,
+  .product.watch, {
+    width: 47%;
+  }
+
+  .product.glasses{
+    display: none;
+  }
+  .products .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .container {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  .main-banner {
+    height: 15rem;
+  }
+
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 1rem;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
+
+  .products {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .products,
+  .buisiness-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 0 0;
+    flex-direction: column;
+  }
+
+  .product.pen {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  footer .container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .buisiness-info .info {
+    width: 90%;
+    display: block;
+  }
+}
