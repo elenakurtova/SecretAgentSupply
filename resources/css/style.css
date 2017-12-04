@@ -139,7 +139,6 @@ width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .product-image img {
