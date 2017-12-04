@@ -129,7 +129,7 @@ li {
 .product.pen,
 .product.watch,
 .product.glasses {
-width: 30%;
+  width: 30%;
 }
 
 .product-image {
@@ -201,6 +201,10 @@ footer {
     text-align: center;
   }
 
+  .container {
+    width: 100%;
+  }
+
   .container .products{
     display: flex;
     justify-content: space-between;
@@ -208,11 +212,9 @@ footer {
   }
 
   .product.pen,
-  .product.watch, {
-    max-width: 47%;
+  .product.watch {
+    width: 47%;
     position: relative;
-    justify-content: space-between;
-    align-content: stretch;
   }
 
   .product.glasses{
