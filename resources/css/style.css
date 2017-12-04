@@ -19,10 +19,6 @@ display: block;
 line-height: 1.4rem;
 }
 
-header {
-
-}
-
 div {
   display: block;
 }
@@ -70,10 +66,6 @@ img {
   margin: 0 auto;
 }
 
-.container img {
-
-}
-
 .main-banner {
   background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
@@ -91,13 +83,8 @@ img {
   position: relative;
 }
 
-.headline {
-
-}
-
 .headline h1 {
   font-size: 2rem;
-  /*line-height: 1.2rem;*/
   line-height: 2rem;
   margin: 0.25rem 0;
 }
@@ -220,7 +207,6 @@ footer {
   .product.glasses{
     display: none;
   }
-
 
   .container {
     max-width: 1024px;
